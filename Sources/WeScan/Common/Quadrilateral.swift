@@ -237,3 +237,13 @@ extension Quadrilateral: Equatable {
             && lhs.bottomLeft == rhs.bottomLeft
     }
 }
+
+extension Quadrilateral {
+    // Public initializer to create a Quadrilateral instance
+    public init(topLeft: CGPoint, topRight: CGPoint, bottomRight: CGPoint, bottomLeft: CGPoint) {
+        self.topLeft = topLeft
+        self.topRight = topRight
+        self.bottomRight = bottomRight
+        self.bottomLeft = bottomLeft
+    }
+}
