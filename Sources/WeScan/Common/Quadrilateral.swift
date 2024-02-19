@@ -61,7 +61,7 @@ public struct Quadrilateral: Transformable {
     }
 
     @available(iOS 11.0, *)
-    init(rectangleObservation: VNRectangleObservation) {
+    public init(rectangleObservation: VNRectangleObservation) {
         self.topLeft = rectangleObservation.topLeft
         self.topRight = rectangleObservation.topRight
         self.bottomLeft = rectangleObservation.bottomLeft
