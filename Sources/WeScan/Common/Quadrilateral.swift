@@ -68,7 +68,7 @@ public struct Quadrilateral: Transformable {
         self.bottomRight = rectangleObservation.bottomRight
     }
 
-    init(topLeft: CGPoint, topRight: CGPoint, bottomRight: CGPoint, bottomLeft: CGPoint) {
+    public init(topLeft: CGPoint, topRight: CGPoint, bottomRight: CGPoint, bottomLeft: CGPoint) {
         self.topLeft = topLeft
         self.topRight = topRight
         self.bottomRight = bottomRight
@@ -235,15 +235,5 @@ extension Quadrilateral: Equatable {
             && lhs.topRight == rhs.topRight
             && lhs.bottomRight == rhs.bottomRight
             && lhs.bottomLeft == rhs.bottomLeft
-    }
-}
-
-extension Quadrilateral {
-    // Public initializer to create a Quadrilateral instance
-    public init(topLeft: CGPoint, topRight: CGPoint, bottomRight: CGPoint, bottomLeft: CGPoint) {
-        self.topLeft = topLeft
-        self.topRight = topRight
-        self.bottomRight = bottomRight
-        self.bottomLeft = bottomLeft
     }
 }
