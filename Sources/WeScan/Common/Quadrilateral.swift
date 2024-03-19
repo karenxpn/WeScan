@@ -68,7 +68,7 @@ public struct Quadrilateral: Transformable {
         self.bottomRight = rectangleObservation.bottomRight
     }
 
-    public init(topLeft: CGPoint, topRight: CGPoint, bottomRight: CGPoint, bottomLeft: CGPoint) {
+    init(topLeft: CGPoint, topRight: CGPoint, bottomRight: CGPoint, bottomLeft: CGPoint) {
         self.topLeft = topLeft
         self.topRight = topRight
         self.bottomRight = bottomRight
